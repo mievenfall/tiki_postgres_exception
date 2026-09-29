@@ -1,0 +1,6 @@
+[postgresql]
+host=localhost
+database=lab2
+user=postgres
+password=YOUR_PASSWORD
+port=5432
