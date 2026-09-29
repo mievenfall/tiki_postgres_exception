@@ -54,29 +54,29 @@ The loader reads source data from:
 products_*.json
        ↓
 try to open/read file
-     │
-     ├── file error → handle exception
-     │
+       │
+       ├── file error → handle exception
+       │
        ↓
 parse JSON
-     │
-     ├── invalid JSON → handle exception
-     │
+       │
+       ├── invalid JSON → handle exception
+       │
        ↓
 prepare product data
        ↓
 connect to PostgreSQL
-     │
-     ├── connection/database error → handle exception
-     │
+       │
+       ├── connection/database error → handle exception
+       │
        ↓
 SELECT product by id
-     │
-  ┌──┴──┐
-   ↓      ↓
+       │
+    ┌──┴──┐
+    ↓     ↓
 UPDATE  INSERT
-      ↓
-   commit
+       ↓
+     commit
 ```
 
 ---
