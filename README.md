@@ -282,7 +282,7 @@ Database errors are handled with `try` / `except`.
 ## Delete All Product Data
 
 ```bash
-python3 delete_products.py
+python3 clear_table.py
 ```
 
 The script keeps the `products` table but removes all rows:
@@ -321,7 +321,7 @@ SELECT -> INSERT or UPDATE
 
 Queries the table and handles database exceptions.
 
-### `delete_products.py`
+### `clear_table.py`
 
 Deletes all product rows and handles database exceptions.
 
